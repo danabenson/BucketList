@@ -6,7 +6,7 @@
     <DeployUsername>Administrator</DeployUsername>
     <DeployPassword>ST3PAPmvMb</DeployPassword>
     <DeployWebSiteName>"BucketList"</DeployWebSiteName>
-    <PublishedWebsiteFolder>$(MSBuildProjectDirectory)\ZeroDay.API</PublishedWebsiteFolder>
+    <PublishedWebsiteFolder>$(MSBuildProjectDirectory)\BucketList</PublishedWebsiteFolder>
     <MSDeploy>"C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe"</MSDeploy>
   </PropertyGroup>
 
