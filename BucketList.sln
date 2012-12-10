@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BucketList", "BucketList\BucketList.csproj", "{61FF2125-9B4C-4F97-8FF1-9B7C95C838B4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{15CDC533-A529-4BE3-A930-6B9053FF7AF5}"
+	ProjectSection(SolutionItems) = preProject
+		Build\BucketList.msbuild = Build\BucketList.msbuild
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
