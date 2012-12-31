@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BucketList", "BucketList\Bu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{15CDC533-A529-4BE3-A930-6B9053FF7AF5}"
 	ProjectSection(SolutionItems) = preProject
-		Build\BucketList.msbuild = Build\BucketList.msbuild
+		BucketList.msbuild = BucketList.msbuild
 	EndProjectSection
 EndProject
 Global
