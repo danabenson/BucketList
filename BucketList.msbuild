@@ -6,7 +6,7 @@
     <DeployUsername>Administrator</DeployUsername>
     <DeployPassword>ST3PAPmvMb</DeployPassword>
     <DeployWebSiteName>"BucketList"</DeployWebSiteName>
-    <PublishedWebsiteFolder>$(MSBuildProjectDirectory)\BucketList</PublishedWebsiteFolder>
+    <PublishedWebsiteFolder>$(OutputDir)\_PublishedWebsites\FacebookBucketList.Web</PublishedWebsiteFolder>
     <MSDeploy>"C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe"</MSDeploy>
   </PropertyGroup>
 
