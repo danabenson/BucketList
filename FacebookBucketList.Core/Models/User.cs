@@ -14,7 +14,7 @@ namespace FacebookBucketList.Core.Models
 
         public string FacebookId { get; set; }
 
+        [Required]
         public Bucket Bucket { get; set; }
-
     }
 }

@@ -28,11 +28,7 @@
     </script>
 
     <div id="wrapper">
-        <header id="topHeader">
-            <h1>Hello</h1>
-            <span id="arrow"></span>
-            <h2>Modify this template to jump-start your Facebook application using ASP.NET MVC.</h2>
-        </header>
+        @Html.Partial("_Header")
         @RenderBody()
         @Html.Partial("_Footer")
     </div>

@@ -1,0 +1,11 @@
+﻿@model FacebookBucketList.Core.Models.Bucket
+
+<ul>
+    @foreach (var item in Model.Items)
+    {
+        <li>
+            <span class="icon-delete"></span>@Html.TextBox(string.Empty, item.Text, new {@class = "BucketItemText"})
+        </li>
+    }
+</ul>
+<span class="btn btn-success"><i class="icon-plus icon-white"></i>Add To Bucket</span>

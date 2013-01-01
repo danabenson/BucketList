@@ -1,0 +1,14 @@
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\bin\Debug\FacebookBucketList.Core.dll
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\bin\Debug\FacebookBucketList.Core.pdb
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\bin\Debug\AutoMapper.dll
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\bin\Debug\EntityFramework.dll
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\bin\Debug\Ninject.dll
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\bin\Debug\AutoMapper.xml
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\bin\Debug\EntityFramework.xml
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\bin\Debug\Ninject.pdb
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\bin\Debug\Ninject.xml
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\obj\Debug\FacebookBucketList.Core.csprojResolveAssemblyReference.cache
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\obj\Debug\FacebookBucketList.Core.dll
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\obj\Debug\FacebookBucketList.Core.pdb
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\obj\Debug\FacebookBucketList.Core.Migrations.InitialCreate.resources
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\obj\Debug\FacebookBucketList.Core.csproj.GenerateResource.Cache
