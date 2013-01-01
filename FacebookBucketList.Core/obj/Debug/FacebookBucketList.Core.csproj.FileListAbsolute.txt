@@ -12,3 +12,6 @@ C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\obj\Debug\Face
 C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\obj\Debug\FacebookBucketList.Core.pdb
 C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\obj\Debug\FacebookBucketList.Core.Migrations.InitialCreate.resources
 C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\obj\Debug\FacebookBucketList.Core.csproj.GenerateResource.Cache
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\obj\Debug\FacebookBucketList.Core.Migrations.stuf.resources
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\obj\Debug\FacebookBucketList.Core.Migrations.relations_fix.resources
+C:\Users\Dana\Documents\GitHub\BucketList\FacebookBucketList.Core\obj\Debug\FacebookBucketList.Core.Migrations.completed_not_required.resources

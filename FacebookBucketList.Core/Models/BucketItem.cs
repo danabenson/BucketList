@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FacebookBucketList.Core.Models
 {
@@ -16,6 +12,9 @@ namespace FacebookBucketList.Core.Models
 
         public DateTime Created { get; set; }
 
-        public DateTime Completed { get; set; }
+        public DateTime? Completed { get; set; }
+
+        [Required]
+        public Bucket Bucket { get; set; }
     }
 }

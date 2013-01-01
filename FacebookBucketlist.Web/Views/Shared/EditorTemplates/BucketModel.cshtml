@@ -1,0 +1,15 @@
+﻿@model FacebookBucketlist.Web.Models.BucketModel
+
+<span class="btn btn-success" data-bind="click: AddItem"><i class="icon-plus icon-white"></i>Add To Bucket</span>
+<span class="btn btn-primary" data-bind="click: Share"><i class="icon-star icon-white"></i>Share Bucket</span>
+<ul data-bind="foreach: BucketItems" class="BucketList">
+    <li>
+        <span class="icon-minus" data-bind="click: Remove"></span>@Html.TextBox("BucketItemText", string.Empty, new {@class = "BucketItemText", placeholder = "Enter a bucket item.", data_bind = "value: Text"})
+    </li>
+</ul>
+
+<script type="text/javascript">
+    var bucketId = @Html.Raw(Json.Encode(Model.Id));
+    var bucketItems = @Html.Raw(Json.Encode(Model.Items));
+    bucket.initialize(bucketItems, bucketId);
+</script>

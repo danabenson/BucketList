@@ -30,16 +30,26 @@ namespace FacebookBucketlist.Web.Controllers
                 var blUser = GetUser(user);
 
                 model.Name = user.Name;
-                model.Bucket = blUser.Bucket ?? new Bucket();
+                model.Bucket = new BucketModel();
+                model.Bucket.Name = string.Empty;
+                model.Bucket.Items = blUser.Bucket.Items.Select(GetItemModel).ToList();
                 
                 return View(model);
             }
             return View("Error");
         }
 
+        private ItemModel GetItemModel(BucketItem item)
+        {
+            var model = new ItemModel();
+            model.Id = item.Id;
+            model.Text = item.Text;
+            return model;
+        }
+
         private User GetUser(MyAppUser fbUser)
         {
-            var user = _bucketListContext.Users.FirstOrDefault(x => x.FacebookId == fbUser.Id);
+            var user = _bucketListContext.Users.Include("Bucket").Include("Bucket.Items").FirstOrDefault(x => x.FacebookId == fbUser.Id);
             if (user == null)
             {
                 user = new User();

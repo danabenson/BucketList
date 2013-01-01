@@ -15,7 +15,7 @@
     <AssemblyName>FacebookBucketlist.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -147,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="Controllers\BucketItemsController.cs" />
     <Compile Include="Infrastructure\BundleConfig.cs" />
     <Compile Include="Infrastructure\FacebookConfig.cs" />
     <Compile Include="Infrastructure\FilterConfig.cs" />
@@ -159,7 +160,9 @@
     </Compile>
     <Compile Include="Infrastructure\AppInitializer.cs" />
     <Compile Include="Infrastructure\BucketListModule.cs" />
+    <Compile Include="Models\BucketModel.cs" />
     <Compile Include="Models\HomeModel.cs" />
+    <Compile Include="Models\ItemModel.cs" />
     <Compile Include="Models\MyAppUserFriend.cs" />
     <Compile Include="Models\MyAppUser.cs" />
     <Compile Include="Models\FacebookPicture.cs" />
@@ -201,7 +204,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\_Footer.cshtml" />
-    <Content Include="Views\Shared\_Bucket.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\BucketModel.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -209,6 +212,9 @@
       <Project>{E573A3CF-7E09-42C8-9C48-822B94DCBD12}</Project>
       <Name>FacebookBucketList.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Shared\DisplayTemplates\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -228,7 +234,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50769</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50497/</IISUrl>
+          <IISUrl>http://localhost</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

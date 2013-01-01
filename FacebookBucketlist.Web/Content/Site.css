@@ -13,3 +13,8 @@ footer {
 .BucketList li{
     list-style: none;
 }
+
+.BucketItemText {
+
+    width: 400px;
+}

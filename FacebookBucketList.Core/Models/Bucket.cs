@@ -19,6 +19,7 @@ namespace FacebookBucketList.Core.Models
 
         public List<BucketItem> Items { get; set; }
 
+        [Required]
         public User User { get; set; }
     }
 }

@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using FacebookBucketList.Core.Models;
 
 namespace FacebookBucketlist.Web.Models
 {
-    public class HomeModel
+    public class BucketModel
     {
+        public int Id { get; set; }
+
         public string Name { get; set; }
 
-        public BucketModel Bucket { get; set; }
+        public List<ItemModel> Items { get; set; }
     }
 }

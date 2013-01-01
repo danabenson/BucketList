@@ -54,6 +54,18 @@
     <Compile Include="Migrations\201301010648105_InitialCreate.Designer.cs">
       <DependentUpon>201301010648105_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201301012158417_stuf.cs" />
+    <Compile Include="Migrations\201301012158417_stuf.Designer.cs">
+      <DependentUpon>201301012158417_stuf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201301012248114_relations_fix.cs" />
+    <Compile Include="Migrations\201301012248114_relations_fix.Designer.cs">
+      <DependentUpon>201301012248114_relations_fix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201301012256178_completed_not_required.cs" />
+    <Compile Include="Migrations\201301012256178_completed_not_required.Designer.cs">
+      <DependentUpon>201301012256178_completed_not_required.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Bucket.cs" />
     <Compile Include="Models\BucketItem.cs" />
@@ -67,6 +79,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201301010648105_InitialCreate.resx">
       <DependentUpon>201301010648105_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201301012158417_stuf.resx">
+      <DependentUpon>201301012158417_stuf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201301012248114_relations_fix.resx">
+      <DependentUpon>201301012248114_relations_fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201301012256178_completed_not_required.resx">
+      <DependentUpon>201301012256178_completed_not_required.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
