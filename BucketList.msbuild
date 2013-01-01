@@ -16,7 +16,7 @@
 
   <Target Name="Build">
     <ItemGroup>
-      <ProjectToBuild Include="BucketList.sln">
+      <ProjectToBuild Include="FacebookBucketList.sln">
         <Properties>OutputPath=$(OutputDir);Configuration=Release;MvcBuildViews=false</Properties>
       </ProjectToBuild>
     </ItemGroup>

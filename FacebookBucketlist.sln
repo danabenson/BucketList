@@ -5,6 +5,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookBucketlist.Web", "F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookBucketList.Core", "FacebookBucketList.Core\FacebookBucketList.Core.csproj", "{E573A3CF-7E09-42C8-9C48-822B94DCBD12}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{779678A0-979A-42F4-A604-05684034ECF4}"
+	ProjectSection(SolutionItems) = preProject
+		BucketList.msbuild = BucketList.msbuild
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
