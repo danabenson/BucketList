@@ -27,7 +27,7 @@ namespace FacebookBucketlist.Web.Controllers
                 var user = await context.Client.GetCurrentUserAsync<MyAppUser>();
                 var model = new HomeModel();
 
-                var blUser = GetUser(user.Id);
+                var blUser = GetUser(user);
 
                 model.Name = user.Name;
                 model.Bucket = blUser.Bucket ?? new Bucket();
@@ -37,13 +37,14 @@ namespace FacebookBucketlist.Web.Controllers
             return View("Error");
         }
 
-        private User GetUser(string id)
+        private User GetUser(MyAppUser fbUser)
         {
-            var user = _bucketListContext.Users.FirstOrDefault(x => x.FacebookId == id);
+            var user = _bucketListContext.Users.FirstOrDefault(x => x.FacebookId == fbUser.Id);
             if (user == null)
             {
                 user = new User();
-                user.FacebookId = id;
+                user.FacebookId = fbUser.Id;
+                user.ProfileImageUrl = fbUser.ProfilePicture.Data.Url;
                 user.Bucket = new Bucket();
                 user.Bucket.Items = new List<BucketItem>();
                 _bucketListContext.Users.Add(user);

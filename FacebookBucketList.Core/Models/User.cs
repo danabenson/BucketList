@@ -12,6 +12,8 @@ namespace FacebookBucketList.Core.Models
         [Key]
         public int Id { get; set; }
 
+        public string ProfileImageUrl { get; set; }
+
         public string FacebookId { get; set; }
 
         [Required]

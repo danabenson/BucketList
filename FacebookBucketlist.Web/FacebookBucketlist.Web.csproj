@@ -178,6 +178,7 @@
     <None Include="readme.txt" />
     <Content Include="Scripts\analytics.js" />
     <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\home.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
