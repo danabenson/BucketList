@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using FacebookBucketList.Core;
 using FacebookBucketList.Core.Models;
 using FacebookBucketlist.Web.Models;
+using Microsoft.AspNet.Mvc.Facebook;
 
 namespace FacebookBucketlist.Web.Controllers
 {
