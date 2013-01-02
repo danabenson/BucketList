@@ -1,0 +1,11 @@
+﻿<ul data-bind="foreach: BucketItems" class="BucketList">
+    <li>
+        <div class="BucketItemText" data-bind="value: Text"></div>
+    </li>
+</ul>
+
+<script type="text/javascript">
+    var bucketId = @Html.Raw(Json.Encode(Model.Id));
+    var bucketItems = @Html.Raw(Json.Encode(Model.Items));
+    bucket.initialize(bucketItems, bucketId);
+</script>

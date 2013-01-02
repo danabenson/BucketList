@@ -31,6 +31,7 @@ namespace FacebookBucketlist.Web.Controllers
 
                 model.Name = user.Name;
                 model.Bucket = new BucketModel();
+                model.Bucket.Id = blUser.Bucket.Id;
                 model.Bucket.Name = string.Empty;
                 model.Bucket.Items = blUser.Bucket.Items.Select(GetItemModel).ToList();
                 

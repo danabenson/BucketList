@@ -148,6 +148,7 @@
   <ItemGroup>
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Controllers\BucketItemsController.cs" />
+    <Compile Include="Controllers\BucketsController.cs" />
     <Compile Include="Infrastructure\BundleConfig.cs" />
     <Compile Include="Infrastructure\FacebookConfig.cs" />
     <Compile Include="Infrastructure\FilterConfig.cs" />
@@ -167,6 +168,7 @@
     <Compile Include="Models\MyAppUser.cs" />
     <Compile Include="Models\FacebookPicture.cs" />
     <Compile Include="Models\FacebookPhoto.cs" />
+    <Compile Include="Models\ViewBucketModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -177,6 +179,7 @@
     <Content Include="Global.asax" />
     <Content Include="Images\glyphicons-halflings-white.png" />
     <Content Include="Images\glyphicons-halflings.png" />
+    <Content Include="Images\PostImage.png" />
     <Content Include="packages.config" />
     <None Include="readme.txt" />
     <Content Include="Scripts\analytics.js" />
@@ -206,6 +209,8 @@
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\BucketModel.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Buckets\View.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\BucketModel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FacebookBucketList.Core\FacebookBucketList.Core.csproj">
@@ -213,9 +218,7 @@
       <Name>FacebookBucketList.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Shared\DisplayTemplates\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

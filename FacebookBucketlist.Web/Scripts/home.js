@@ -26,7 +26,41 @@
         };
 
         this.Share = function() {
-            alert('Not Implemented');
+            var count = model.BucketItems().length;
+            if (count < 1) {
+                alert('Need 1 or more bucket items.');
+                return;
+            }
+            var text = model.BucketItems()[0].Text();
+            var text2 = '';
+            if (count > 1) {
+                text2 = model.BucketItems()[1].Text();
+            }
+
+            var desc = text;
+            if (text2) {
+                desc += '   ' + text2;
+            }
+            if (count > 2) {
+                desc += '   '+count - 2+' more...';
+            }
+
+            var obj = {
+                method: 'feed',
+                redirect_uri: '',
+                link: 'http://localhost/Buckets/View?bucketId=' + bucketId,
+                picture: 'http://www.friendsbucketlist.com/Images/PostImage.png',
+                name: 'My Bucket List',
+                caption: 'caption',
+                description: desc
+            };
+
+            function callback(response) {
+                document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+            }
+
+            FB.ui(obj, callback);
+
         };
     }
 
